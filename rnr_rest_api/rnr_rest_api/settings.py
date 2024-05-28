@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'device_environment_2.apps.DeviceEnvironment2Config',
     'device_state.apps.DeviceStateConfig',
     'device_update.apps.DeviceUpdateConfig',
+    'material_lines_table.apps.MaterialLinesTableConfig',
     'rest_framework',
     'corsheaders',
 ]

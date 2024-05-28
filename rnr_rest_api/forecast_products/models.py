@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Product(models.Model):
-    product_id = models.CharField(max_length=100)
+    product_id = models.CharField(max_length=100, unique=True)
     product_version = models.FloatField()
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=100)

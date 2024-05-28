@@ -28,4 +28,30 @@ def ShowAll(request):
     serializers = DeviceUpdateSerializer(updated_devices, many = True)
     return Response(serializers.data, status=status.HTTP_200_OK)
 
+@api_view(['DELETE'])
+def DeleteUpdatedDevice(request,id):
+    try:
+        updated_device = DeviceUpdate.objects.get(id=id)
+    except DeviceUpdate.DoesNotExist:
+        return Response({"error": "Device not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+    updated_device.delete()
+    return Response({"message": "Deleted successfully"},status=status.HTTP_204_NO_CONTENT)
 
+
+@api_view(['PUT'])
+def UpdateUpdatedDevice(request):
+    id = request.data.get('id',None)
+    if id is None:
+        return Response({"error": "ID parameter is required for updating product"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    try:
+        device = DeviceUpdate.objects.get(id=id)
+    except DeviceUpdate.DoesNotExist:
+        return Response({"error": "Product not found"},status=status.HTTP_404_NOT_FOUND)
+    
+    serializer = DeviceUpdateSerializer(device,data=request.data,partial=True)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data,status=status.HTTP_200_OK)
+    return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
