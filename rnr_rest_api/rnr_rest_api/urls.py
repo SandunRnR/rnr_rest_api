@@ -26,4 +26,6 @@ urlpatterns = [
     path('api/',include('device_state.urls')),
     path('api/',include('device_update.urls')),
     path('api/',include('material_lines_table.urls')),
+    # path('api/', include('login.urls')),
+    path('api/', include('log_in.urls')),
 ]
