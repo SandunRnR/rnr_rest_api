@@ -28,4 +28,6 @@ urlpatterns = [
     path('api/',include('material_lines_table.urls')),
     # path('api/', include('login.urls')),
     path('api/', include('log_in.urls')),
+    path('api/', include('stage_of_product_forecast.urls')),
+
 ]

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'device_state.apps.DeviceStateConfig',
     'device_update.apps.DeviceUpdateConfig',
     'material_lines_table.apps.MaterialLinesTableConfig',
+    'stage_of_product_forecast.apps.StageOfProductForecastConfig',
     'log_in.apps.LogInConfig',
     'rest_framework',
     'corsheaders',
