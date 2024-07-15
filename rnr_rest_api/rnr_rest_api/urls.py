@@ -29,5 +29,7 @@ urlpatterns = [
     # path('api/', include('login.urls')),
     path('api/', include('log_in.urls')),
     path('api/', include('stage_of_product_forecast.urls')),
+    path('api/', include('data_capturing_system.urls')),
+    path('api/', include('chat_app.urls')),
 
 ]

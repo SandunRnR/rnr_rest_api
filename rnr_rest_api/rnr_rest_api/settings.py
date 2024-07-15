@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'material_lines_table.apps.MaterialLinesTableConfig',
     'stage_of_product_forecast.apps.StageOfProductForecastConfig',
     'log_in.apps.LogInConfig',
+    'data_capturing_system.apps.DataCapturingSystemConfig',
+    'chat_app.apps.ChatAppConfig',
     'rest_framework',
     'corsheaders',
 ]
