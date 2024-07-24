@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'log_in.apps.LogInConfig',
     'data_capturing_system.apps.DataCapturingSystemConfig',
     'chat_app.apps.ChatAppConfig',
+    'product_master_table.apps.ProductMasterTableConfig',
+    'size_group.apps.SizeGroupConfig',
+    'color_group.apps.ColorGroupConfig',
     'rest_framework',
     'corsheaders',
 ]

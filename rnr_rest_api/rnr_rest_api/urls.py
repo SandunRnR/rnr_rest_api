@@ -31,5 +31,8 @@ urlpatterns = [
     path('api/', include('stage_of_product_forecast.urls')),
     path('api/', include('data_capturing_system.urls')),
     path('api/', include('chat_app.urls')),
+    path('api/', include('product_master_table.urls')),
+    path('api/', include('size_group.urls')),
+    path('api/', include('color_group.urls'))
 
 ]
