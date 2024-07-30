@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'product_master_table.apps.ProductMasterTableConfig',
     'size_group.apps.SizeGroupConfig',
     'color_group.apps.ColorGroupConfig',
+    'style.apps.StyleConfig',
+    'parameters.apps.ParametersConfig',
     'rest_framework',
     'corsheaders',
 ]
