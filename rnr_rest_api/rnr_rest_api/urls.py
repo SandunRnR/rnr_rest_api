@@ -36,5 +36,6 @@ urlpatterns = [
     path('api/', include('color_group.urls')),
     path('api/', include('style.urls')),
     path('api/', include('parameters.urls')),
-
+    path('api/', include('production_center_order.urls')),
+    path('api/', include('revenue.urls')),
 ]

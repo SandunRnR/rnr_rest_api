@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'color_group.apps.ColorGroupConfig',
     'style.apps.StyleConfig',
     'parameters.apps.ParametersConfig',
+    'production_center_order.apps.ProductionCenterOrderConfig',
+    'revenue.apps.RevenueConfig',
     'rest_framework',
     'corsheaders',
 ]
